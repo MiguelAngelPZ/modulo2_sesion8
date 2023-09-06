@@ -29,4 +29,4 @@ const BD= [
         nombre: "Usuario 4",
         hobbies: []
     },
-]
+];

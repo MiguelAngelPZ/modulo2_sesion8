@@ -7,11 +7,11 @@ function login(user, pass, bd){
     return busqueda;
 }
 
-function construyePerfil(datos){
+function construyePerfil(datos) {
     const profile = document.createElement("h1");
     profile.textContent = `Bienvenido: ${datos.nombre}`;
-    document.getElementById ("perfilUsuario").appendChild(profile);
-}
+    document.getElementById("perfilUsuario").appendChild(profile);
+  }
 
 const elemento = document.getElementById("accion") // Esto es lo mismo que abajo pero es para ahorrar programación
 
@@ -33,7 +33,7 @@ elemento.addEventListener("click", () => {
         console.log("loginUsuario", loginUsuario)
         if( loginUsuario.length > 0){
             alert("usuario logeado");
-            construyePerfil(loginUsuario)
+            construyePerfil(loginUsuario[0])
         } else{ 
             alert("usuario no encontrado")
         }
